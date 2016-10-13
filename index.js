@@ -12,7 +12,7 @@ api.use({
 var redirect_uri = 'http://telasocial.com:3333/handleauth';
  
 exports.authorize_user = function(req, res) {
-  res.redirect(api.get_authorization_url(redirect_uri, { scope: ['likes'], state: 'a state' }));
+  res.redirect(api.get_authorization_url(redirect_uri, { scope: ['likes','public_content'], state: 'a state' }));
 };
  
 exports.handleauth = function(req, res) {
