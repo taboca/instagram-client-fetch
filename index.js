@@ -33,7 +33,7 @@ exports.listMedia = function(req, res) {
 
   api.tag_media_recent('latinoware', function(err, medias, pagination, remaining, limit) {
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify());
+    res.send(JSON.stringify(medias));
   });
 
 };
