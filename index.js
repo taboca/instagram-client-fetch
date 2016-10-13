@@ -1,6 +1,6 @@
 var http = require('http');
 var express = require('express');
-var config = require('./config.js'),
+var config = require('./config.js');
 var api = require('instagram-node').instagram();
 var app = express();
  
