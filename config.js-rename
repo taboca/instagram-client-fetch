@@ -1,5 +1,8 @@
 var config = {
-  'instagram': {id:'bb267a3f647c5adf71acf463251e3',secret:'a1d9465d549579bb7aa109bd9dafe'}
+  'instagram': { 
+     id     : 'bb267a3f647c5adf71acf463251e3',
+     secret : 'a1d9465d549579bb7aa109bd9dafe'
+  }
 };
 
 module.exports = config;
