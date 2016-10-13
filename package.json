@@ -1,0 +1,16 @@
+{
+  "name": "Instagram-client-fetch",
+  "version": "0.1.0",
+  "description": "Fetching instagram content using instagram-node",
+  "main": "index.js",
+  "dependencies": {
+    "instagram-node": "~0.5.8",
+    "express": "~4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcio S Galli",
+  "license": "MIT"
+}
