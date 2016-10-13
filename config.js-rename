@@ -1,7 +1,8 @@
 var config = {
   'instagram': { 
      id     : 'bb267a3f647c5adf71acf463251e3',
-     secret : 'a1d9465d549579bb7aa109bd9dafe'
+     secret : 'a1d9465d549579bb7aa109bd9dafe', 
+     token  : '074425.462bb26.7e524c735488465c99ffa05db3ea1220'
   }
 };
 
