@@ -11,12 +11,22 @@ api.tag_search('latinoware', function(err, result, remaining, limit) {
 
 //api.tag_media_recent('latinoware', [options,] function(err, medias, pagination, remaining, limit) {});
 
-
 // Note from instagram API As another example, let's consider an endpoint that returns a list of media: /tags/{tag-name}/media/recent. The response returned by this endpoint will contain only media with the given tag, as expected. But instead of returning media from any public Instagram user, it will return only media that belongs to your sandbox users, restricted to the last 20 for each user.
 
 
 api.tag_media_recent('latinoware', function(err, medias, pagination, remaining, limit) {
   console.log(JSON.stringify(medias));
+  for(var i=0;i<medias.length;i++)  { 
+    console.log('media id: '+medias[i].id);
+    fetchMedia(medias[i].id);
+  } 
 });
+
+function fetchMedia(id) { 
+   api.media(id, function(err, media, remaining, limit) {
+	console.log("Media info:");
+        console.log('media url '+media.images.standard_resolution.url);
+   });
+}
 
 
