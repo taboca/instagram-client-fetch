@@ -1,6 +1,6 @@
 var http = require('http');
 var express = require('express');
-var config = require('../config.js'),
+var config = require('./config.js'),
 var api = require('instagram-node').instagram();
 var app = express();
  
@@ -9,7 +9,7 @@ api.use({
   client_secret: config.instagram.secret
 });
 
-var redirect_uri = 'http://telasocial.com:3333/auth';
+var redirect_uri = 'http://telasocial.com:3333/handleauth';
  
 exports.authorize_user = function(req, res) {
   res.redirect(api.get_authorization_url(redirect_uri, { scope: ['likes'], state: 'a state' }));
